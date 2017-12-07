@@ -1,0 +1,75 @@
+.navigator
+	display none
+	left 0.5rem
+	position fixed
+	top 50%
+	transform translateY(-@top)
+	transitionBase()
+	width 3rem
+	z-index 30
+	
+
+	ul
+		list-style-type none
+		padding 0
+		text-align left
+		
+
+		li
+			margin 1rem auto
+			position relative
+			
+			&::before
+				background-color white
+				circ(1rem)
+				content ''
+				display inline-block
+				left 0
+				position relative
+			
+			&:hover
+				a
+					opacity 0.99
+					text-decoration none
+			
+			a
+				background-color $azul
+				border-radius 3rem
+				color white
+				display inline-block
+				left 0
+				margin 0
+				opacity 0
+				overflow hidden
+				padding 0.1rem 3rem
+				position absolute
+				top -0.3rem
+				transform translateX(0rem)
+				transitionBase()
+				width 47rem
+				
+			&:nth-of-type(2)
+				a
+					max-width 20rem
+				
+			&:nth-of-type(3)
+				a
+					max-width 42rem
+			&:nth-of-type(4),
+			&:nth-of-type(8)
+				a
+					max-width 22rem
+			&:nth-of-type(5)
+				a
+					max-width 24rem
+			&:nth-of-type(6)
+				a
+					max-width 27rem
+			&:nth-of-type(7)
+				a
+					max-width 38rem
+				
+
+@media (min-width:$screen-sm)
+	.navigator
+		display block

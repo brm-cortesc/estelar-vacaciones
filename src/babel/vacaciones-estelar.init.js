@@ -1,3 +1,43 @@
+/*Image loader*/
+
+window.onload = ()=>{
+
+  const placeholder = document.getElementsByClassName('placeholder');
+
+
+  for( let x= 0; x < placeholder.length; x++){
+
+    const small = placeholder[x].childNodes[0];
+
+    let img = new Image();
+    img.src = small.src;
+
+    img.onload = ()=>{
+
+      small.classList.add('loaded')
+    };
+
+    let imgBig = new Image();
+
+    imgBig.src = placeholder[x].dataset.xl;
+
+    imgBig.onload = ()=>{
+      imgBig.classList.add('loaded')
+
+    };
+
+   placeholder[x].appendChild(imgBig);      
+
+
+     
+  };
+
+
+
+
+};
+
+
 jQuery(document).ready( ()=>{
 
 	const $promos = jQuery('.slider');
@@ -45,11 +85,18 @@ jQuery(document).ready( ()=>{
         go(this);
     });
 
+    jQuery('.navigator a').click(function(e) {
+      e.preventDefault();
+      go(this);
+
+    });
+
     //modal
     jQuery('.btn-legales').click(function (e) {
       e.preventDefault();
       jQuery('#terminos').modal('show')
     });
+
 
 
 

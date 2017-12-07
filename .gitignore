@@ -1,3 +1,6 @@
+**/**/.DS_Store
+**/**/concat.libs.js
+**/**/style.css
 node_modules
 *.sublime-project
 *.sublime-workspace

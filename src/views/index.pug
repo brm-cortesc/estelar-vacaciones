@@ -9,6 +9,10 @@ block title
 block description
 	meta(name="description", content="Haz que las vacaciones pasen | Hoteles Estelar" )
 
+//- img(src='assets/images/promos/pareja-big.jpg',
+//- srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ")
+
+//- img(src='images/slider/articulo-home.jpg', srcset="images/slider/articulo-home.jpg 1000w, images/slider/articulo-home-640.jpg 770w", sizes="(min-width:770px) 100%, 100% " )
 
 block content
 
@@ -25,27 +29,175 @@ block content
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									//- +image('promos/pareja.jpg', 'Plan Pareja')
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					// -for(i=0;i < 8; i++)
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2645908&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2645908&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2645908&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2646626&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg" )
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2646411&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2646411&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2646411&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=99499&rateplanid=2646411&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+
 			///-Promos Hotel
 		
 	///-hotel
@@ -63,26 +215,173 @@ block content
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646189&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646189&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646189&discount=familia35&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+				
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646188&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg" )
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646187&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646187&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+	
+
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646187&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+			
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75635&rateplanid=2646187&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
+				
+
 			///-Promos Hotel
 		
 	///-hotel
@@ -99,26 +398,163 @@ block content
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2646413&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2646413&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2646413&discount=familia35&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2646282&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg" )
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2645733&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2645733&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2645733&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=96950&rateplanid=2645733&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
 			///-Promos Hotel
 		
 	///-hotel
@@ -135,26 +571,163 @@ block content
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2646402&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2646402&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2646402&discount=familia35&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2646117&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg" )
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2645740&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2645740&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2645740&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75642&rateplanid=2645740&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
 			///-Promos Hotel
 		
 	///-hotel
@@ -171,26 +744,163 @@ block content
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2645907&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2645907&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2645907&discount=familia35&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2646107&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg" )
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2646686&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2646686&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2646686&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75631&rateplanid=2646686&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
 			///-Promos Hotel
 		
 	///-hotel
@@ -208,26 +918,163 @@ block content
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646131&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646131&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646131&discount=familia35&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646133&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg")
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646125&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646125&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646125&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=76284&rateplanid=2646125&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
 			///-Promos Hotel
 		
 	///-hotel
@@ -244,26 +1091,163 @@ block content
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2646515&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2646515&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2646515&discount=familia35&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2646527&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg" )
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2645718&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2645718&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2645718&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75651&rateplanid=2645718&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
 			///-Promos Hotel
 		
 	///-hotel
@@ -273,33 +1257,170 @@ block content
 		article.row
 			//Nombre hotel
 			div.col-left
-				h2.text-title ESTELAR Oceanía
+				h2.text-title Hotel ESTELAR Oceanía
 			///-Nombre hotel
 
 			//Promos Hotel
 			div.col-right
 
 				div.slider
-					-for(i=0;i < 8; i++)
-						//Promo
-						div.item
-							div.item-container
-								figure.item-img
-									img(src='assets/images/promos/pareja-big.jpg', srcset="assets/images/promos/pareja-big.jpg 1000w, assets/images/promos/pareja-thumb.jpg 770w", sizes="(min-width:770px) 100%, 100% ", alt="Plan pareja", title="plan pareja" )
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-20-big.jpg" )
+								+image('promos/familia-20-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
 
-								div.item-text
-									div.promo-container
-										p.promo-desc
-											span.promo-tipo familia
-											span.promo-cant 50%
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 20%
 
-										p.promo-condicion.
-												3<sup>ra</sup> noche.
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
 
-								div.clearfix
+							div.clearfix
 
-								a.btn.btn-default(href="#") Ver más
-						///-Promo
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646178&discount=familia20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-25-big.jpg" )
+								+image('promos/familia-25-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 25%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646178&discount=familia25&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/familia-35-big.jpg" )
+								+image('promos/familia-35-thumb.jpg', 'Plan Familia')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo familia
+										span.promo-cant 35%
+
+									//- p.promo-condicion.
+									//- 		3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646178&discount=familia35&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/pareja-big.jpg" )
+								+image('promos/pareja-thumb.jpg', 'Plan Pareja')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo parejas
+										span.promo-cant 50%
+
+									p.promo-condicion.
+											3<sup>ra</sup> noche.
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646179&discount=pareja&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-10-big.jpg" )
+								+image('promos/amigos-10-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 10%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646177&discount=amigos10&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-20-big.jpg" )
+								+image('promos/amigos-20-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 20%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646177&discount=amigos20&languageID=2", target="_blank") Ver más
+					///-Promo
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-30-big.jpg" )
+								+image('promos/amigos-30-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 30%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646177&discount=amigos30&languageID=2", target="_blank") Ver más
+					///-Promo
+
+
+					//Promo
+					div.item
+						div.item-container
+							figure.item-img.placeholder(data-xl="assets/images/promos/amigos-40-big.jpg" )
+								+image('promos/amigos-40-thumb.jpg', 'Plan Amigos')(class="img-show")
+								div.placeholder-fill
+
+							div.item-text
+								div.promo-container
+									p.promo-desc
+										span.promo-tipo amigos
+										span.promo-cant 40%
+
+							div.clearfix
+
+							a.btn.btn-default(href="https://reservations.ihotelier.com/istay.cfm?hotelid=75644&rateplanid=2646177&discount=amigos40&languageID=2", target="_blank") Ver más
+					///-Promo
 			///-Promos Hotel
 		
 	///-hotel

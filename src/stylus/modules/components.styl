@@ -1,3 +1,37 @@
+.placeholder
+	background-color $azul
+	background-size cover 
+	background-repeat no-repeat 
+	position relative 
+	overflow hidden
+	max-height 6rem
+	
+
+	img
+		left 0
+		opacity 0
+		position absolute
+		top 0
+		transitionBase()
+		
+		&.loaded
+			filter blur(0px)
+			opacity 0.99
+			
+	.img-show
+		filter blur(100px)
+		transform scale(1)
+		
+
+	
+		
+
+	
+	&-fill
+		padding-bottom aspect-ratio(16,9)
+		
+
+
 .promo
 	&-cant
 		border-left 1px solid $azul
@@ -15,7 +49,7 @@
 		margin 1rem auto
 		
 	&-desc
-		font-size 2rem
+		font-size 1.6rem
 		font-weight $bold
 		line-height 1
 		margin 0
