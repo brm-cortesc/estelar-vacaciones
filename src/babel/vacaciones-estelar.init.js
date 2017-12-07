@@ -75,9 +75,7 @@ jQuery(document).ready( ()=>{
   	  jQuery('html, body').animate({
   	    scrollTop: jQuery(locacion).offset().top
   	  }, 1000);
-    
 
-  	  console.log('hay hash')
   	};
 
   	//Btn scroll down
@@ -85,8 +83,8 @@ jQuery(document).ready( ()=>{
         go(this);
     });
 
-    jQuery('.navigator a').click(function(e) {
-      e.preventDefault();
+    jQuery('.navigator a').click(function() {
+      // e.preventDefault();
       go(this);
 
     });
