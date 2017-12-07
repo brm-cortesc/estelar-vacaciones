@@ -1,0 +1,30 @@
+//se pueden declarar con funciones
+// make-prefix-column(num)
+// make-prefix-column-offset(num)
+// @stylint off
+
+.col
+	&-left,
+	&-right,
+	&-text
+		make-sm-column(6)
+		
+	&-logo
+		top 0
+		left 0
+		position fixed
+		width 100%
+		z-index 20
+		make-sm-column(4)
+		
+
+.item
+	make-sm-column(6)
+	// margin-bottom 1rem
+	// margin-top @margin-bottom
+
+
+@media (min-width:$screen-sm)
+	.col
+		&-logo
+			position initial

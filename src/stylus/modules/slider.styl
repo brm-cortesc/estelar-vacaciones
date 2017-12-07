@@ -1,0 +1,58 @@
+.item
+	&-container
+		background-color #fff
+	&-img,
+	&-text
+		float left
+
+	&-img
+		width 42%
+		
+		img
+			img-responsive(block)
+			width 100%
+	&-text
+		color $azul
+		padding 0.5rem 1rem
+		position relative
+		text-align center
+		width 57%
+		
+		p
+			margin 0
+			
+
+
+// #slider-home
+.slick
+	
+	&-dots
+		list-style-type none
+		margin 1rem auto
+		padding 0
+		text-align center
+		
+		li
+			display inline-block
+			margin 0.5rem
+			
+			button 
+				background-color white
+				border 1px solid $azul
+				circ(1.5rem)
+				overflow hidden
+				padding 0
+				text-indent -9999px
+				transitionBase()
+				
+				&:active,
+				&:focus
+					outline 0
+					outline none
+			
+			&.slick-active
+				button 
+					background-color $azul
+					
+.slider
+	margin 1rem auto

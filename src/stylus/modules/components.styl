@@ -1,0 +1,49 @@
+.promo
+	&-cant
+		border-left 1px solid $azul
+		float right
+		margin-left 0.5rem
+		padding 0 0.5rem
+		
+	&-condicion
+		clear both
+		font-size 1rem
+		font-weight $light
+		text-align right
+		
+	&-container
+		margin 1rem auto
+		
+	&-desc
+		font-size 2rem
+		font-weight $bold
+		line-height 1
+		margin 0
+		text-transform uppercase
+
+
+
+.text
+	&-title
+		background-color rgba($azul, .8)
+		color white
+		font-size 1.7rem
+		line-height 1
+		padding 2rem
+		position relative
+		text-align center
+		text-transform initial
+		transitionBase()
+		z-index 1
+		
+		&::before
+			border 1px solid white
+			content ''
+			height 80%
+			width 97%
+			left 1.5%
+			pointer-events none
+			position absolute
+			top 50%
+			transform translateY(-50%)
+			z-index 0
