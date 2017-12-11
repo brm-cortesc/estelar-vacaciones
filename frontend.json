@@ -20,6 +20,6 @@
   "fonts": "fonts/",
   "libs":{
     "bootstrap": "bootstrap.min.js",
-    "validate": "slick.js"
+    "slick": "slick.js"
   }
 }
