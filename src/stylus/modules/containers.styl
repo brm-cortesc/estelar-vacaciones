@@ -1,28 +1,79 @@
 section.container
 	&-altamira
-		path('bg/altamira.jpg')
+		&::before
+			path('bg/altamira.jpg')
 	&-cali
-		path('bg/cali.jpg')
-	&-cartagena
-		path('bg/cartagena.jpg')
-	&-fontana
-		path('bg/fontana.jpg')
-	&-manzanillo
-		path('bg/manzanillo.jpg')
-	&-oceania
-		path('bg/oceania.jpg')
-	&-paipa
-		path('bg/paipa.jpg')
-	&-villao
-		path('bg/villao.jpg')
-	
+		&::before
+			path('bg/cali.jpg')
+	&-cartagena		
+		&::before
+			path('bg/cartagena.jpg')
 
+	&-fontana
+		&::before
+			path('bg/fontana.jpg')
+		
+	&-manzanillo
+		&::before
+			path('bg/manzanillo.jpg')
+		
+	&-oceania
+		&::before
+			path('bg/oceania.jpg')
+		
+	&-paipa
+		&::before
+			path('bg/paipa.jpg')
+		
+	&-villao
+		&::before
+			path('bg/villao.jpg')
+		
+		
 	&-fluid
 		clearfix()
-		background-attachment fixed
-		background-position 50% 50%
-		background-repeat no-repeat
-		background-size cover
+		background-color $azul
+		// background-attachment fixed
+		// background-position 50% 50%
+		// background-repeat no-repeat
+		// background-size cover
 		color white
 		margin 0
 		padding 2rem 0
+		position relative
+		z-index 1
+		
+		&::before
+			background-attachment fixed
+			background-position 50% 50%
+			background-repeat no-repeat
+			background-size cover
+			content ''
+			display block
+			height  100%
+			left 0
+			opacity 0
+			padding-bottom 0%
+			pointer-events none 
+			position absolute
+			top 0
+			transitionBase()
+			width 100%
+			z-index 0
+			
+
+		&.ready
+			&::before
+				opacity 0.99
+			
+
+.container
+	&-legal
+		background-color rgba($azul, .8)
+		color white
+		line-height 1
+		padding 2rem
+		
+
+		p
+			margin 1rem auto

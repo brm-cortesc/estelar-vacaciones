@@ -27,13 +27,11 @@
 
 
 @media (min-width:640px)
-	.promo
-		&-condicion
-			font-size 2rem
-		&-desc
-			font-size 4rem
-		
-	.placeho	
+	header
+		.menu-lista
+			left 25%
+			width (@left*2)
+
 
 	.item
 		&-img
@@ -43,6 +41,12 @@
 	.placeholder
 		max-height 9.8rem
 
+	.promo
+		&-condicion
+			font-size 2rem
+		&-desc
+			font-size 4rem
+		
 
 @media (min-width:$screen-sm)
 	.placeholder
@@ -57,10 +61,16 @@
 			display inline-block
 			
 	header
-		path('bg/bg-header-desktop.jpg')
+		&::before
+			path('bg/bg-header-desktop.jpg')
 
 		.logo
 			max-width 100%
+			
+		.menu-lista
+			left 36%
+			width 26%
+
 			
 		.text
 			&-dcto
@@ -115,6 +125,14 @@
 
 
 @media (min-width:$screen-lg)
+
+	// header
+	// 	.menu-lista
+	// 		left 42.5%
+	// 		width 13%
+			
+	// 		.lista
+	// 			width auto
 
 	.item
 		&-text

@@ -4,6 +4,8 @@ window.onload = ()=>{
 
   const placeholder = document.getElementsByClassName('placeholder');
 
+  const bgs = document.getElementsByClassName('container-fluid');
+
 
   for( let x= 0; x < placeholder.length; x++){
 
@@ -33,10 +35,23 @@ window.onload = ()=>{
   };
 
 
+
 };
 
 
 jQuery(document).ready( ()=>{
+
+  
+  jQuery('.container-fluid').each(function(index, el) {
+    jQuery(el).ready( function () {
+      
+      jQuery(el).addClass('ready');
+
+    });
+
+    
+  });
+
 
 	const $promos = jQuery('.slider');
 
@@ -84,6 +99,8 @@ jQuery(document).ready( ()=>{
     jQuery('.navigator a').click(function() {
       // e.preventDefault();
       go(this);
+      jQuery('.navigator li').removeClass('active');
+      jQuery(this).parent().addClass('active');
 
     });
 
@@ -94,6 +111,26 @@ jQuery(document).ready( ()=>{
     });
 
 
+    //desplegable header
+    jQuery('.selector-toggle').click(function (e) {
+        jQuery('header .lista').addClass('active');
+
+    });
+
+    jQuery('header .lista .close').click(function (e) {
+        jQuery('header .lista').removeClass('active');
+      
+    });
+
+
+    jQuery('header .lista a').click( function (e) {
+      e.preventDefault();
+      
+      if(!jQuery(this).parent().hasClass('close')) go(this);
+
+      jQuery('header .lista').removeClass('active');
+
+    } );
 
 
 

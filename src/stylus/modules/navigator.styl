@@ -5,14 +5,24 @@
 	top 50%
 	transform translateY(-@top)
 	transitionBase()
-	width 3rem
+	width 8rem
 	z-index 30
 	
+	p
+		color white
+		line-height 1
+		text-align center
+		text-shadow 0px 0px 5px rgba(0,0,0,0.9)	
 
 	ul
+		background-color $azul
+		border-radius 20px
+		box-shadow 0px 0px 5px 0px rgba(0,0,0,0.5)
 		list-style-type none
-		padding 0
+		margin 0 auto
+		padding 0.25rem
 		text-align left
+		width 1.8rem
 		
 
 		li
@@ -24,13 +34,20 @@
 				circ(1rem)
 				content ''
 				display inline-block
-				left 0
+				left 50%
 				position relative
-			
+				transform translateX(-50%)
+				transitionBase()
+				
 			&:hover
 				a
 					opacity 0.99
 					text-decoration none
+			
+			&.active
+				&::before
+					circ(0.8rem)
+					
 			
 			a
 				background-color $azul
@@ -47,6 +64,8 @@
 				transform translateX(0rem)
 				transitionBase()
 				width 47rem
+				
+					
 				
 			&:nth-of-type(2)
 				a
@@ -70,6 +89,6 @@
 					max-width 38rem
 				
 
-@media (min-width:$screen-sm)
+@media (min-width:$screen-lg)
 	.navigator
 		display block

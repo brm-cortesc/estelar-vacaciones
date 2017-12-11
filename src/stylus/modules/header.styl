@@ -1,15 +1,32 @@
 header
-	background-attachment fixed
-	background-position 50% 50%
-	background-repeat no-repeat
-	background-size cover
+	background-color $azul
 	color white
 	height 100vh
 	margin 0
 	margin 0 auto
 	padding 0 0.5rem 40rem
-	path('bg/bg-header-mobile.jpg')
-	position initial
+	position relative
+	z-index 31
+	
+	&::before
+		background-attachment fixed
+		background-position 50% 50%
+		background-repeat no-repeat
+		background-size cover
+		content ''
+		display block
+		height 100%
+		left 0
+		opacity 0
+		path('bg/bg-header-mobile.jpg')
+		position absolute
+		top 0
+		transitionBase()
+		width 100% 
+		
+	&.ready
+		&::before
+			opacity 0.99
 
 	.logo
 		margin 0
@@ -20,16 +37,84 @@ header
 			display block
 			margin 0
 			
+
+	.menu-lista
+		background-color $azul
+		border-radius 10px 10px 0px 0px
+		bottom 0
+		box-shadow 0px -5px 5px 0px rgba(0,0,0,0.3)
+		left 0
+		position absolute
+		text-align center
+		width 100%
+		
+		p
+			margin-top 1rem
+		
+		.lista
+			background-color $azul
+			bottom 0
+			box-shadow 0px 0px 5px 0px rgba(0,0,0,0.3)
+			left 50%
+			list-style-type none
+			max-height 0
+			overflow hidden
+			padding 0
+			position absolute
+			transform translateX(-@left)
+			transitionBase()
+			width 100%
+			
+
+			&.active
+				max-height 40rem
+			
+			li
+				display block
+				padding 0
+				vertical-align middle
+				width 100%
+				
+				a
+					color white
+					display block
+					font-size 1.2rem
+					line-height 1
+					padding 1rem 2rem
+					text-decoration none
+					
+
+				&:hover
+					a
+						background-color lighten($azul, 40%)
+						
+
+				&.close
+					a
+						fa(angle-down)
+					
+		
+		.selector
+			&-toggle
+				cursor pointer
+				
+				span
+					padding 0 0.5rem
+
+				.arrow-down
+					fa(angle-up)
+		
+
 	.scroll
 		bottom 2rem
 		color white
 		cursor pointer
-		left 50%
+		left 2rem
 		position absolute
 		text-align center
 		text-decoration none
 		text-shadow 0px 0px 5px rgba(0,0,0,0.5)
-		transform translateX(-50%)
+		// transform translateX(-50%)
 		transitionBase()
 		
 		
